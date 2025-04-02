@@ -1,0 +1,19 @@
+[project]
+name = "can-raise"
+version = "0.1.0"
+description = "A simple library for decorating functions that can raise exceptions."
+readme = "README.md"
+authors = [
+    { name = "EnteryName" }
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]
