@@ -24,6 +24,9 @@ def can_raise(*exc: Type[Exception]) -> Callable[[Callable[P, T]], Callable[P, T
         exc = (Exception, )
 
     def wrapper(func: Callable[P, T]) -> Callable[P, T]:
-        func.__raises__ = exc
+        try:
+            func.__raises__ = exc
+        except (AttributeError, TypeError):
+            pass
         return func
     return wrapper
