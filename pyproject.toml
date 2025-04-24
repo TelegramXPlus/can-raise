@@ -1,6 +1,6 @@
 [project]
 name = "can-raise"
-version = "0.1.8"
+version = "0.2.1"
 description = "A simple library for decorating functions that can raise exceptions."
 readme = "README.md"
 authors = [
